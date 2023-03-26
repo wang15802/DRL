@@ -1,0 +1,28 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 2px;
+}
+
+.cell.start {
+    background-color: green;
+}
+
+.cell.end {
+    background-color: red;
+}
+
+.cell.blocked {
+    background-color: grey;
+}

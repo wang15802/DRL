@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gridworld</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='grid.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='grid.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gridworld</h1>
+        <p>Enter the size of the grid (n = 3 to 10):</p>
+        <input type="number" id="size" min="3" max="10">
+        <button id="create-grid">Create Grid</button>
+        <div id="grid"></div>
+        <p>Select the start and end cells:</p>
+        <button id="set-start">Set Start</button>
+        <button id="set-end">Set End</button>
+        <button id="set-blocked">Set Blocked</button>
+        <button id="clear">Clear</button>
+    </div>
+</body>
+</html>
